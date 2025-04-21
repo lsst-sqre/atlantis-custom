@@ -1,0 +1,26 @@
+# This only exists for python repo management tools
+[project]
+name = "atlantis-custom"
+description = "Tools for repo management"
+version = "0.1.0"
+requires-python = ">=3.13"
+
+[dependency-groups]
+repo = [
+    "pre-commit",
+    "pre-commit-uv",
+    "scriv",
+]
+
+[tool.scriv]
+categories = [
+    "Backwards-incompatible changes",
+    "New features",
+    "Bug fixes",
+    "Other changes",
+]
+entry_title_template = "{{ version }} ({{ date.strftime('%Y-%m-%d') }})"
+format = "md"
+md_header_level = "2"
+new_fragment_template = "file:changelog.d/_template.md.jinja"
+skip_fragments = "_template.md.jinja"
