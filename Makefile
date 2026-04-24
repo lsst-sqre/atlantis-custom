@@ -11,7 +11,11 @@ init:
 	uv run pre-commit install
 
 .PHONY: update
-update: update-deps init
+update: update-tools update-deps init
+
+.PHONY: update-tools
+update-tools:
+	mise upgrade --local
 
 .PHONY: update-deps
 update-deps:
