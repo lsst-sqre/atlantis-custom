@@ -1,4 +1,12 @@
 
+<a id='changelog-1.2.0'></a>
+## 1.2.0 (2026-10-19)
+
+### Other changes
+
+- Atlantis -> 0.48.1
+- Sentry CLI -> 3.8.0
+
 <a id='changelog-1.1.0'></a>
 ## 1.1.0 (2026-04-24)
 
